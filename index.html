@@ -8,26 +8,67 @@
     <title>Document</title>
 </head>
 <body>
-    <section class="hero">
-        <div class="nav-bar">
-            <nav>
-                <a href="">Carte</a>
-                <a href="">Avis</a>
-                <a href="">Galerie</a>
-                <a href="">About us</a>
-                <a href="">Reservation</a>
-                <a href="">Lieux</a>
-                <a href="">Nos cuisiniers</a>
-                <a href="">Nos services</a>
-            </nav>
+    <header class="hero">
+        <div class="nav-bar-container">
+            <div class="nav-row">
+                <div class="nav-bar">
+                    <nav class="">
+                        <a href="#">Carte</a>
+                        <a href="#">Avis</a>
+                        <a href="#">Galerie</a>
+                        <a href="#">About us</a>
+                        <a href="#">Reservation</a>
+                        <a href="#">Lieux</a>
+                        <a href="#">Nos cuisiniers</a>
+                        <a href="#">Nos services</a>
+                    </nav>
+                </div>
+                <div class="reservationButton">
+                    <a href="#" class="reserver">Reserver</a>
+                </div>
+<!-- bouton burger (visible en mobile) -->
+                <a href="#" id="openBtn" class="burger-trigger" aria-label="Ouvrir le menu">
+                    <span class="burger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </a>
+            </div>
         </div>
-        <div class="reservationButton">
-            <a href="" type="button" class="reserver">Reserver</a>
+
+<!-- menu mobile slide-in -->
+        <div id="sideNavBar" class="sideNavBar-container" aria-hidden="true">
+            <a id="closeBtn" href="#" class="close" aria-label="Fermer">x</a>
+            <ul>
+                <li><a href="#">Carte</a></li>
+                <li><a href="#">Avis</a></li>
+                <li><a href="#">Galerie</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Reservation</a></li>
+                <li><a href="#">Lieux</a></li>
+                <li><a href="#">Nos cuisiniers</a></li>
+                <li><a href="#">Nos services</a></li>
+            </ul>
         </div>
-        <div class="logo">
-            <p>Altera</p>
-        </div>
-    </section>
+        <div class="logo"><p>Altera</p></div>
+    </header>
+    <div class="altera">
+        <h1>Altera est un restaurant végétarien mêlant cuisine éclectique et élégance.</h1>
+        <p>Ce restaurant Strabourgeois dépoussière les classique en les adaptant a un régime végétarien, végan afin de proposer une expérience unique, responsable et durable.</p>
+            <div class="reservationButtonAltera">
+                <a href="#" class="reserver">Reserver</a>
+            </div>
+    </div>
+    <div class="div-image-altera">
+        <img src="../media/image/jpg/Index/saladeRotie.jpg" alt="" class="imageAltera">
+    </div>
+    <div class="dejeuner"></div>
+    <div class="image-dejeuner"></div>
+    <div class="ambiance"></div>
+    <div class="image-ambiance"></div>
+    <div class="horaire"></div>
+    <script src="script/custom.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

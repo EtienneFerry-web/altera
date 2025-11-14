@@ -64,42 +64,175 @@ table {
 	src: url(../media/font/helvetica-255-cufonfonts/Helvetica.ttf);
 }
 
+/*Integration Hero */
+
 .hero{
 	background-image: url("../media/image/jpg/Hero/Hero.jpg");
 	background-size: cover;
 	background-position: center;
 	width: 100%;
-	height: 100vh;
+	height: auto;
+	padding:0;
+	margin:0;
+}
+
+/*Navbar Mobile*/
+
+/* ---------- Header layout (flex) ---------- */
+.nav-bar-container {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Utiliser un container flex pour aligner nav + bouton */
+.nav-row {
+  display: flex;
+  align-items: center;        /* align vertical */
+  justify-content: space-between; /* espace entre nav et btn */
+  padding: 20px 30px;
+  gap: 20px;
+}
+
+/* Desktop nav */
+.nav-bar {
+  display: none; /* mobile par défaut */
+  flex: 1 1 auto;
+  order:1;
+  align-items: center;
+}
+
+/* Le <nav> interne: aligner les liens horizontalement */
+.nav-bar nav {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+/* Bouton Reserver */
+
+.reservationButton .reserver {
+  display: inline-block;
+  background-color: var(--vertFonce);
+  color: var(--blanc);
+  text-decoration: none;
+  padding: 8px 16px;
+  border: 3px solid var(--or);
+  border-radius: 20px;
+  font-family: PersoHelvetica;
+}
+
+.reservationButton {
+	margin-right: 70px;
+	display:inline-block;
+	order:3;
+}
+/* Burger trigger (visible mobile) */
+#openBtn {
+  display: block;
+  text-decoration: none;
+  order:0;
+}
+.burger-icon span {
+  display: block;
+  width: 35px;
+  height: 4px;
+  background-color: var(--or);
+  margin: 6px 0;
+}
+
+/* Side menu mobile */
+.sideNavBar-container {
+  height: 100%;
+  width: 280px;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: -280px;
+  background-color: var(--vertFonce);
+  padding-top: 60px;
+  transition: left 0.35s ease;
+}
+.sideNavBar-container.active {
+  left: 0;
+}
+.sideNavBar-container .close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 36px;
+  color: var(--blanc);
+}
+
+.sideNavBar-container ul { 
+	padding: 0 10px; 
+}
+
+.sideNavBar-container a { 
+	color: var(--blanc); 
+	text-decoration: none; 
+	display:block; 
+	padding:12px 8px; 
+}
+
+/* ---------- Media queries ---------- */
+/* Desktop: afficher nav + bouton, cacher burger & side menu */
+@media screen and (min-width: 1300px) {
+  #openBtn { display: none; }
+  .sideNavBar-container { display: none !important; } /* safe hide */
+  .nav-bar { display: block; }
+
+}
+
+/* Optionnel: tablette layout (ex : montrer burger < 992px) */
+@media screen and (min-width: 992px) and (max-width: 1299px) {
+  /* Par exemple: afficher la nav en inline si tu veux */
+  /* ici on conserve burger sous 1300px comme demandé */
 }
 
 .hero .nav-bar{
-	text-align: center;
-	padding-top: 80px;
+    padding-left: 30px;
 }
 
 .hero .nav-bar a{
-	font-family: PersoHelvetica;
-	font-size: large;
-	color:var(--blanc);
+    font-family: PersoHelvetica;
+    font-size: large;
+    color:var(--blanc);
     text-decoration: none;
-	justify-content: space-between;
-	padding: 3px;
+    justify-content: space-between;
+    padding: 3px;
 }
 
 .hero .reservationButton a{
-	background-color: #637C49;
-	color: var(--blanc);
-	text-decoration: none;
-	padding-left: 10px;
-	padding-right: 10px;
-	border: 3px solid #C9B458;
-	border-radius: 20px;
+    background-color: #637C49;
+    color: var(--blanc);
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 3px solid #C9B458;
+    border-radius: 20px;
 }
 
 .hero .logo p{
-	font-family: Amoria;
-	font-size:140px;
-	color:var(--or);
-	text-align: center;
+    font-family: Amoria;
+    font-size:140px;
+    color:var(--or);
+    text-align: center;
 }
 
+.altera{
+	background-color: var(--or);
+	width:100%;
+	height: auto;
+	margin:0;
+	padding: 0;
+}
+.imageAltera{
+	background-image: url(../media/image/jpg/Index/saladeRotie.jpg);
+	width:100%;
+	height:auto;
+	background-size: fixed;
+}
+
+.dejeuner{
+	background-color: var(--orange);
+}
