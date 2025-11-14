@@ -52,16 +52,54 @@ table {
     --vertClair:#9CAF88;
 }
 
+/*Chargement font*/
+
+@font-face {
+	font-family: Amoria;
+	src: url(../media/font/amoria/AMORIA.otf);
+}
+
+@font-face{
+	font-family: PersoHelvetica;
+	src: url(../media/font/helvetica-255-cufonfonts/Helvetica.ttf);
+}
+
+.hero{
+	background-image: url("../media/image/jpg/Hero/Hero.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100vh;
+}
+
+.hero .nav-bar{
+	text-align: center;
+	padding-top: 80px;
+}
+
 .hero .nav-bar a{
-	color:var();
+	font-family: PersoHelvetica;
+	font-size: large;
+	color:var(--blanc);
     text-decoration: none;
+	justify-content: space-between;
+	padding: 3px;
 }
 
 .hero .reservationButton a{
 	background-color: #637C49;
 	color: var(--blanc);
 	text-decoration: none;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 3px solid #C9B458;
+	border-radius: 20px;
 }
 
-
+.hero .logo p{
+	font-family: Amoria;
+	font-size:140px;
+	color:var(--or);
+	text-align: center;
+}
 
