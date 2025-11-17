@@ -115,7 +115,7 @@ table {
 
 /* Bouton Reserver */
 
-.reservationButton .reserver {
+.reservationButton .reserverHero {
   display: inline-block;
   background-color: var(--vertFonce);
   color: var(--blanc);
