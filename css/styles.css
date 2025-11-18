@@ -224,44 +224,30 @@ table {
     text-align: center;
 }
 
-.altera{
+#altera{
 	background-color: var(--or);
-	width:100%;
-	height: auto;
 	margin:0;
 	padding: 0;
 }
 
-.altera h1 {
+#altera h1 {
   font-family: Amoria;
   margin:10px;
   padding:10px;
-  text-align: center;
 }
 
-.altera p {
+#altera p {
   margin:10px;
   padding:10px;
-  text-align: center;
 }
 
-.imageAltera{
+#imageAltera{
 	background-image: url(../media/image/jpg/Index/saladeRotie.jpg);
 	width:100%;
 	background-size: fixed;
 }
 
-div .imageAltera{
-  padding:0;
-  margin:0;
-}
-
-.reservationButtonAltera {
-  text-align:center;
-  padding-bottom: 20px;
-}
-
-.altera .reservationButtonAltera .reserver {
+#altera #reservationButtonAltera #reserver {
   text-decoration: none;
   color:var(--noir);
   border:3px solid var(--blanc);
@@ -273,39 +259,29 @@ div .imageAltera{
   padding-bottom:2px;
 }
 
-.dejeuner h2{
+#dejeuner h2{
   color: var(--blanc);
   padding: 10px;
   font-family: Amoria;
   text-align:center;
 }
 
-.dejeuner p {
+#dejeuner p {
   color:var(--blanc);
   padding:10px;
-  margin:0px;
-  text-align: center;
 }
 
 
-.dejeuner{
+#dejeuner{
 	background-color: var(--orange);
-  margin: 0;
-  padding:0;
 }
 
-.image-dejeuner img{
+#image-dejeuner img{
   width:100%;
 
 }
 
-.reservationButtonDejeuner{
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 20px;
-}
-
-.dejeuner .reservationButtonDejeuner .reserverDejeuner {
+#dejeuner #reservationButtonDejeuner #reserverDejeuner {
   text-decoration: none;
   color:var(--blanc);
   border:3px solid var(--blanc);
@@ -317,14 +293,14 @@ div .imageAltera{
   padding-bottom:2px;
 }
 
-.iconDejeuner{
+#iconDejeuner{
   display:inline-block;
   width:100%;
   text-align: center;
   justify-content: space-evenly;
 }
 
-.dejeuner .iconDejeuner img{
+#dejeuner #iconDejeuner img{
   width:50px;
   height:50px;
   margin: 5px;
