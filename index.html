@@ -8,19 +8,20 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="hero">
-        <div class="nav-bar-container">
-            <div class="nav-row">
+    <section class="container p-0">
+        <div class="row p-0 m-0 text-center" id="hero">
+            <div class="nav-bar-container">             
+                <div class="nav-row">
                 <div class="nav-bar">
                     <nav class="">
-                        <a href="#">Carte</a>
-                        <a href="#">Avis</a>
-                        <a href="#">Galerie</a>
-                        <a href="#">About us</a>
-                        <a href="#">Reservation</a>
-                        <a href="#">Lieux</a>
-                        <a href="#">Nos cuisiniers</a>
-                        <a href="#">Nos services</a>
+                        <a href="../pages/carte.html">Carte</a>
+                        <a href="../pages/avis.html">Avis</a>
+                        <a href="../pages/galerie.html">Galerie</a>
+                        <a href="../pages/aboutUs.html">About us</a>
+                        <a href="../pages/reservation.html">Reservation</a>
+                        <a href="../pages/lieux.html">Lieux</a>
+                        <a href="../pages/nosCuisiniers.html">Nos cuisiniers</a>
+                        <a href="../pages/nosServices.html">Nos services</a>
                     </nav>
                 </div>
                 <div class="reservationButton">
@@ -30,40 +31,41 @@
                 <a href="#" id="openBtn" class="burger-trigger" aria-label="Ouvrir le menu">
                     <span class="burger-icon">
                         <span></span>
-                        <span></span>
+                        <span></span>                        
                         <span></span>
                     </span>
                 </a>
             </div>
-        </div>
-
+                        
 <!-- menu mobile slide-in -->
-        <div id="sideNavBar" class="sideNavBar-container" aria-hidden="true">
-            <a id="closeBtn" href="#" class="close" aria-label="Fermer">x</a>
-            <ul>
-                <li><a href="#">Carte</a></li>
-                <li><a href="#">Avis</a></li>
-                <li><a href="#">Galerie</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Reservation</a></li>
-                <li><a href="#">Lieux</a></li>
-                <li><a href="#">Nos cuisiniers</a></li>
-                <li><a href="#">Nos services</a></li>
-            </ul>
-        </div>
-        <div class="logo"><p>Altera</p></div>
-    </header>
+            <div id="sideNavBar" class="sideNavBar-container" aria-hidden="true">
+                <a id="closeBtn" href="#" class="close" aria-label="Fermer">x</a>
+                    <ul>
+                        <li><a href="../pages/carte.html">Carte</a></li>
+                        <li><a href="../pages/avis.html">Avis</a></li>
+                        <li><a href="../pages/galerie.html">Galerie</a></li>
+                        <li><a href="../pages/aboutUs.html">About us</a></li>
+                        <li><a href="../pages/reservation.html">Reservation</a></li>
+                        <li><a href="../pages/lieux.html">Lieux</a></li>
+                        <li><a href="../pages/nosCuisiniers.html">Nos cuisiniers</a></li>
+                        <li><a href="../pages/nosServices.html">Nos services</a></li>
+                    </ul>
+            </div>
+            <div class="p-0 m-0" id="logo">
+                <p>Altera</p></div>
+            </div>            
+    </section>                
 <!--Premiere partie -->
     <section class="container">
         <div class="row">
-            <div class="col-12 md-6 text-center" id="altera">
+            <div class="col-12 col-md-6 text-center" id="altera">
                 <h1>Altera est un restaurant végétarien mêlant cuisine éclectique et élégance.</h1>
                 <p>Ce restaurant Strabourgeois dépoussière les classique en les adaptant a un régime végétarien, végan afin de proposer une expérience unique, responsable et durable.</p>
                     <div class="col-12 pb-4" id="reservationButtonAltera">
                         <a href="#" class="" id="reserver">Reserver</a>
                     </div>
             </div>
-            <div class="col-12 md-6 m-0 p-0">
+            <div class="col-12 col-md-6 m-0 p-0">
                 <div class="m-0 p-0">
                     <img src="../media/image/jpg/Index/saladeRotie.jpg" alt="" class="" id="imageAltera">
                 </div>
@@ -73,7 +75,7 @@
 <!--Deuxieme partie-->
     <section class="container">
         <div class="row">
-            <div class="col-12 md-6 text-center" id="dejeuner">
+            <div class="col-12 col-md-6 text-center" id="dejeuner">
                 <h2 class="pt-4 text-center">Du déjeuner au diner</h2>
                 <p class="p-4">Dejeuner ou bien diner laissé nous vous accompagner, autours de notre bar, à table, à emporter ou même en tant que traiteur la cuisine de notre équipe ce partage(ou pas...).</p>
                 <div class="pb-4 pt-4" id="reservationButtonDejeuner">
@@ -81,60 +83,111 @@
                 </div>
         
             <div class="row"></div>
-                <div id="iconDejeuner">
+                <div class="col-12" id="iconDejeuner">
                     <img src="media/image/svg/Icone-service001.png" alt="" class="col-3">
                     <img src="media/image/svg/Icone-Table001.png" alt="" class="col-3">
                     <img src="media/image/svg/Icone-Livraison001.png" alt="" class="col-3">
                 </div>
             </div>
-            <div class="col-12 md-6 m-0 p-0" id="image-dejeuner">
+            <div class="col-12 col-md-6 m-0 p-0" id="image-dejeuner">
                 <img src="media/image/jpg/Index/Rectangle 5.jpg" alt="">
             </div>
         </div>
     </section>
+<!--Troisieme partie-->
     <section class="container">
         <div class="row">
-            <div class="ambiance">
-                <h2>Une ambiance exceptionnel</h2>
-                <p>Moderne, Chaleureux et élégant notre carte ce démarque aussi bien ses plats que par ses créations cocktails et autres gourmandises</p>
-                <div class="reservationButtonAmbiance">
-                    <a href="#" class="reserverAmbiance">Reserver</a>
+            <div class="col-12 col-md-6 text-center" id="ambiance">
+                <h2 class="pt-4">Une ambiance exceptionnel</h2>
+                <p class="pt-4">Moderne, Chaleureux et élégant notre carte ce démarque aussi bien ses plats que par ses créations cocktails et autres gourmandises</p>
+                <div class="text-center pt-4 pb-4" id="reservationButtonAmbiance">
+                    <a href="#" class="" id="reserverAmbiance">Reserver</a>
                 </div>
             </div>
-            <div class="image-ambiance">
+            <div class="col-12 col-md-6 m-0 p-0" id="image-ambiance">
                 <img src="media/image/jpg/Index/Rectangle 7.jpg" alt="" srcset="">
             </div>
         </div>
     </section>
-    <div class="horaire">
-
-        <div class="horaireGauche">
-            <h2>Horaire :</h2>
-            <p>Lundi</p>
-            <p>Mardi</p>
-            <p>Mercredi</p>
-            <p>Jeudi</p>
-            <p>Vendredi</p>
-            <p>Samedi</p>
-            <p>Dimanche</p>
+<!--Quatrième partie-->
+    <section class="container">
+        <div class="row">
+            <div class="col-12 " id="horaire">
+                <div class="row pt-2">
+                    <h2>Horaire :</h2>
+                    <div class="col-4 m-0 ps-3" id="horaireGauche">
+                        
+                        <p>Lundi</p>
+                        <p>Mardi</p>
+                        <p>Mercredi</p>
+                        <p>Jeudi</p>
+                        <p>Vendredi</p>
+                        <p>Samedi</p>
+                        <p>Dimanche</p>
+                    </div>
+                    <div class="col-4 m-0" id="horaireDroite">
+                        <p>12:00 - 00:00</p>
+                        <p>12:00 - 00:00</p>
+                        <p>12:00 - 00:00</p>
+                        <p>12:00 - 00:00</p>
+                        <p>12:00 - 00:00</p>
+                        <p>12:00 - 00:00</p>
+                        <p>12:00 - 00:00</p>
+                    </div>
+                </div>
+                <div class="text-center"id="imageHoraire">
+                    <img src="media/image/svg/Artichaud-svg002.png" alt="">
+                </div>
+            </div>
         </div>
-        <div class="horaireDroite">
-            <p>12:00 - 00:00</p>
-            <p>12:00 - 00:00</p>
-            <p>12:00 - 00:00</p>
-            <p>12:00 - 00:00</p>
-            <p>12:00 - 00:00</p>
-            <p>12:00 - 00:00</p>
-            <p>12:00 - 00:00</p>
-        </div>
-        <div class="imageHoraire">
-            
-        </div>
-    </div>
+    </section>        
     <script src="script/custom.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 <footer>
+    <section class="container p-0 m-0">
+        <div class="row">
+            <div class="col-4 col-md-3">
+                <ul id="listLinkFooter">
+                    <li><strong>Lien du site</strong> </li>
+                    <li><a href="url(../pages/aboutUs.html)">Carte</a></li>
+                    <li><a href="url(../pages/avis.html)">Avis</a></li>
+                    <li><a href="url(../pages/galerie.html)">Galerie</a></li>
+                    <li><a href="url(../pages/aboutUs.html)">About us</a></li>
+                    <li><a href="url(../pages/reservation.html)">Reservation</a></li>
+                    <li><a href="url(..pages/lieux.html)">Lieux</a></li>
+                    <li><a href="url(../pages/nosCuisiniers.html)">Nos cuisiniers</a></li>
+                    <li><a href="url(../pages/nosServices.html)">Nos Services</a></li>
+                </ul>
+            </div>
+            <div class="col-4 col-md-3 text-center p-0">
+                <ul>
+                    <li><a>Mentions légales</a></li>
+                    <li><a>Plan du site</a></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="col-4 col-md-3 text-center p-0" id="iconFooter">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="media/image/svg/Icone-Livraison001.png" alt="">
+                    </div>
+                    <div class="col-6">
+                        <img src="media/image/svg/Icone-service001.png" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <img src="media/image/svg/Icone-Table001.png" alt="">
+                    </div>
+                    <div class="col-6">
+                        <img src="media/image/svg/Fork.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
     
 </footer>
 </html>

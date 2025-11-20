@@ -1,28 +1,32 @@
-//NavBar Mobile
-//Déclaration variable
+// === NAV MOBILE ===
+const sideNavBar = document.getElementById("sideNavBar");
+const openBtn = document.getElementById("openBtn");
+const closeBtn = document.getElementById("closeBtn");
 
-var sideNavBar = document.getElementById("sideNavBar");
-var openBtn = document.getElementById("openBtn");
-var closeBtn = document.getElementById("closeBtn");
-
-// Sécurité : vérifier que les éléments existent avant d'attacher des handlers
-if (openBtn) {
-  openBtn.addEventListener('click', function(e) {
-    e.preventDefault();
-    sideNavBar.classList.add("active");
-  });
+if (openBtn && sideNavBar) {
+    openBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        sideNavBar.classList.add("active");
+        sideNavBar.setAttribute("aria-hidden", "false");
+    });
 }
 
-if (closeBtn) {
-  closeBtn.addEventListener('click', function(e) {
-    e.preventDefault();
-    sideNavBar.classList.remove("active");
-  });
+if (closeBtn && sideNavBar) {
+    closeBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        sideNavBar.classList.remove("active");
+        sideNavBar.setAttribute("aria-hidden", "true");
+    });
 }
 
-// Clique en dehors du menu  pour fermer
-document.addEventListener('click', function(e) {
-  if (!sideNavBar.contains(e.target) && !openBtn.contains(e.target)) {
-    sideNavBar.classList.remove('active');
-  }
+// Clique en dehors pour fermer
+document.addEventListener("click", (e) => {
+    if (
+        sideNavBar.classList.contains("active") &&
+        !sideNavBar.contains(e.target) &&
+        !openBtn.contains(e.target)
+    ) {
+        sideNavBar.classList.remove("active");
+        sideNavBar.setAttribute("aria-hidden", "true");
+    }
 });
