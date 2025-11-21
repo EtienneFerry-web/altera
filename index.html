@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Document</title>
 </head>
-<body>
+<body class="p-0 m-0"id="platesBackG">
     <section class="container p-0">
         <div class="row p-0 m-0 text-center" id="hero">
             <div class="nav-bar-container">             
@@ -25,7 +25,7 @@
                     </nav>
                 </div>
                 <div class="reservationButton">
-                    <a href="#" class="reserverHero">Reserver</a>
+                    <a href="#" class="reserverHero px-2">Reserver</a>
                 </div>
 <!-- bouton burger (visible en mobile) -->
                 <a href="#" id="openBtn" class="burger-trigger" aria-label="Ouvrir le menu">
@@ -38,7 +38,7 @@
             </div>
                         
 <!-- menu mobile slide-in -->
-            <div id="sideNavBar" class="sideNavBar-container" aria-hidden="true">
+            <div id="sideNavBar" class="sideNavBar-container p-0 m-0" aria-hidden="true">
                 <a id="closeBtn" href="#" class="close" aria-label="Fermer">x</a>
                     <ul>
                         <li><a href="../pages/carte.html">Carte</a></li>
@@ -52,22 +52,19 @@
                     </ul>
             </div>
             <div class="p-0 m-0" id="logo">
-                <p class="p-0 m-0">Altera</p>
-            </div>            
-    </section>                
+                <a href="../index.html" class="p-0 m-0"><p class="p-0 m-0">Altera</p></a>
+            </div>           
+    </section>                 
 <!--Premiere partie -->
-    <section class="container">
-        <div class="row">
-            <div class="col-12 col-md-6 text-center" id="altera">
+    <section class="container p-0 m-0">
+        <div class="row p-0 m-0">
+            <div class="col-12 col-md-6 text-center p-0 m-0" id="altera">
                 <h1>Altera est un restaurant végétarien mêlant cuisine éclectique et élégance.</h1>
                 <p>Ce restaurant Strabourgeois dépoussière les classique en les adaptant a un régime végétarien, végan afin de proposer une expérience unique, responsable et durable.</p>
                     <div class="col-12 pb-4" id="reservationButtonAltera">
                         <a href="#" class="" id="reserver">Reserver</a>
                     </div>
-            </div>
-            <div class="col-12 col-md-6 m-0 p-0">
-                <div class="m-0 p-0">
-                    <img src="../media/image/jpg/Index/saladeRotie.jpg" alt="" class="" id="imageAltera">
+                    <img src="../media/image/jpg/Index/saladeRotie.jpg" alt="" class="m-0 p-0" id="imageAltera">
                 </div>
             </div>
         </div>    

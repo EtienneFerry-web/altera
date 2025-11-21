@@ -15,9 +15,8 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -66,17 +65,21 @@ table {
 
 /*Integration Hero */
 
-#hero{
-	background-image: url("../media/image/jpg/Hero/Hero.jpg");
-	background-size: cover;
-	background-position: center;
-	width: 100%;
+#hero {
+    background-image: url("../media/image/jpg/Hero/Hero.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
 }
 
-#hero p {
-  margin:-20px;
-  padding:0;
+#hero .row {
+    margin: 0 !important;
 }
+
+
 
 /*Navbar Mobile*/
 
@@ -189,14 +192,12 @@ table {
   /* Par exemple: afficher la nav en inline si tu veux */
   /* ici on conserve burger sous 1300px comme demandé */
 }
+
 #logo a {
   text-decoration: none;
 }
-/*
-#logo{
 
-}
-*/
+
 .hero .nav-bar{
     padding-left: 30px;
 }
@@ -222,18 +223,23 @@ table {
 }
 
 #hero #logo {
+    text-decoration: none;
     font-family: Amoria;
     font-size:100px;
     color:var(--or);
 }
-#logo p a {
-  text-decoration: none;
+#logo a {
+  
   color: var(--or);
 }
-#altera{
-	background-color: var(--or);
-	margin:0;
-	padding: 0;
+
+
+
+#altera {
+    background-color: var(--or);
+    margin: 0;
+    padding: 0;
+    display: block;
 }
 
 #altera h1 {
@@ -397,12 +403,12 @@ table {
 #menu h2{
   font-family: Amoria;
   color:var(--blanc);
-
 }
 
 #premiereImageMenu img{
   width:100%;
-
+  height: 220px;
+  object-fit: cover;
 }
 
 #textPremierePartieMenu{
@@ -411,7 +417,8 @@ table {
 
 #deuxiemeImageMenu img{
   width:100%;
-
+  height: 220px;
+  object-fit: cover;
 }
 
 #textDeuxiemePartieMenu{
@@ -420,7 +427,8 @@ table {
 
 #troisiemeImageMenu img{
   width:100%;
-
+  height: 220px;
+  object-fit: cover;
 }
 
 #textTroisiemePartieMenu{
@@ -429,8 +437,8 @@ table {
 
 #quatriemeImageMenu img{
   width:100%;
-  height: 210px;
-  
+  height: 220px;
+  object-fit: cover;
 }
 
 #textQuatriemePartieMenu{
@@ -508,4 +516,46 @@ table {
 
 #backgroundColor{
   background-color: var(--vertClair);
+}
+
+#sectionOrange{
+  background-color: var(--orange);
+}
+
+#sectionOr{
+  background-color: var(--or);
+}
+#sectionVertClair{
+  background-color: var(--vertClair);
+}
+#sectionVertFonce{
+  background-color: var(--vertFonce);
+}
+
+#imageAvis{
+  width: 65px;
+  height:65px;
+  border-radius: 50px;
+  
+}
+
+#imageAboutUsUne{
+  width: 220px;
+  height: 350px;
+
+}
+
+#imageAboutUsDeux{
+  width: 330px;
+  height: 190px;
+}
+
+#imageAboutUsTrois{
+  width: 330px;
+  height: 190px;
+}
+
+#imageAboutUsQuatre{
+  width: 115px;
+  height: 140px; 
 }
