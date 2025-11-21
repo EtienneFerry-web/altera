@@ -189,7 +189,14 @@ table {
   /* Par exemple: afficher la nav en inline si tu veux */
   /* ici on conserve burger sous 1300px comme demandé */
 }
+#logo a {
+  text-decoration: none;
+}
+/*
+#logo{
 
+}
+*/
 .hero .nav-bar{
     padding-left: 30px;
 }
@@ -214,7 +221,7 @@ table {
     border-radius: 20px;
 }
 
-#hero #logo p{
+#hero #logo {
     font-family: Amoria;
     font-size:100px;
     color:var(--or);
@@ -358,7 +365,7 @@ table {
 }
 
 
-footer{
+#backgroundColorFooter{
   background-color: var(--vertFonce);
 }
 
@@ -497,4 +504,8 @@ footer{
 #smallImgPlates img{
   width:100px;
   height:100%;
+}
+
+#backgroundColor{
+  background-color: var(--vertClair);
 }
