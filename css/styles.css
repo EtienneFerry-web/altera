@@ -75,8 +75,14 @@ table {
     display: block;
 }
 
+/*Font helper*/
+#amoriaFont{
+  font-family: Amoria;
+}
 
-
+#hekveticaFont{
+  font-family: Persohelvetica;
+}
 /*Navbar Mobile*/
 
 /* ---------- Header layout (flex) ---------- */
@@ -344,7 +350,7 @@ table {
   background-color: var(--vertFonce);
 }
 
-#icon#r img{
+#iconFooter img{
   width:30px;
 
 }
@@ -535,4 +541,25 @@ table {
 
 #r{
   font-size: x-small;
+}
+
+#imageLieuxUne img{
+  width: 100%;
+}
+
+#imageLieuxDeux img{
+  width: 100%;
+}
+
+#imageLieuxTrois img{
+  width:100%;
+}
+
+#containerNegPadding{
+  padding-top: -250px;
+}
+
+footer ul li a {
+  color:var(--blanc);
+  text-decoration: none;
 }
