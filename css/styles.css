@@ -9,7 +9,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+figure, figcaption, #r, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -20,7 +20,7 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+#r, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
@@ -75,10 +75,6 @@ table {
     display: block;
 }
 
-#hero .row {
-    margin: 0 !important;
-}
-
 
 
 /*Navbar Mobile*/
@@ -94,8 +90,8 @@ table {
   display: flex;
   align-items: center;        /* align vertical */
   justify-content: space-between; /* espace entre nav et btn */
-  padding: 20px 30px;
-  gap: 20px;
+  padding: 15px 15px;
+  gap: 10px;
 }
 
 /* Desktop nav */
@@ -114,19 +110,17 @@ table {
 }
 
 /* Bouton Reserver */
-
-.reservationButton .reserverHero {
-  display: inline-block;
+#reservationButton #reserverHero {
+  display: inline-block; /* Le bouton prendra maintenant sa vraie place */
   background-color: var(--vertFonce);
   color: var(--blanc);
   text-decoration: none;
-  padding: 0px;
   border: 3px solid var(--or);
   border-radius: 20px;
   font-family: PersoHelvetica;
 }
 
-.reservationButton {
+#reservationButton{
 	display:inline-block;
 	order:3;
 }
@@ -195,31 +189,6 @@ table {
 
 #logo a {
   text-decoration: none;
-}
-
-
-.hero .nav-bar{
-    padding-left: 30px;
-}
-
-.hero .nav-bar a{
-    font-family: PersoHelvetica;
-    font-size: large;
-    color:var(--blanc);
-    text-decoration: none;
-    justify-content: space-between;
-    padding: 3px;
-    margin:0;
-}
-
-.hero .reservationButton a{
-    background-color: var(--vertClair);
-    color: var(--blanc);
-    text-decoration: none;
-    padding-left: 10px;
-    padding-right: 10px;
-    border: 3px solid var(--or);
-    border-radius: 20px;
 }
 
 #hero #logo {
@@ -371,28 +340,28 @@ table {
 }
 
 
-#backgroundColorFooter{
+#backgroundColor#r{
   background-color: var(--vertFonce);
 }
 
-#iconFooter img{
+#icon#r img{
   width:30px;
 
 }
 
-#listLinkFooter li {
+#listLink#r li {
   list-style: none;
   text-decoration: none;
   color: var(--blanc);
   
 }
-#listLinkFooter li a{
+#listLink#r li a{
   list-style: none;
   text-decoration: none;
   color: var(--blanc);
 }
 
-#listLinkFooter ul:first-child{
+#listLink#r ul:first-child{
   font-weight: bolder;
 }
 
@@ -539,6 +508,10 @@ table {
   
 }
 
+.container{
+  width: 100%;
+}
+
 #imageAboutUsUne{
   width: 220px;
   height: 350px;
@@ -558,4 +531,8 @@ table {
 #imageAboutUsQuatre{
   width: 115px;
   height: 140px; 
+}
+
+#r{
+  font-size: x-small;
 }
