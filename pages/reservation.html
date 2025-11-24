@@ -34,7 +34,7 @@
                         </span>
                     </a>
                     <div id="reservationButton">
-                        <a href="#" class="text-end" id="reserverHero">Reserver</a>
+                        <a href="#" class="text-end px-2" id="reserverHero">Reserver</a>
                     </div>
 <!-- menu mobile slide-in -->
                     <div id="sideNavBar" class="sideNavBar-container" aria-hidden="true">
@@ -56,8 +56,99 @@
             </div> 
         </div>              
     </section>
-    <h1>Reservation</h1> 
-        <footer>
+    <section class="container" id="sectionVertFonce">
+        <div class="row">
+            <div class="col-12 text-center p-2 m-0" id="sectionVertClair">
+                <h2 id="amoriaFont">Reservation</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <form action="" class="p-3">
+                    <label class="pb-2"for="dateDeReservation">Quelle jours souhaitez-vous reserver ?</label>
+                        <input 
+                            class="px-2"
+                            type="date"
+                            id="dateDeReservation"
+                            name="dateDeReservation"
+                            value="2025-01-01"
+                            min="2025-01-01"
+                            max="2099-12-31">
+                    <label class="p-2"for="heureDeReservation">A quelle heure souhaitez-vous reserver ?</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Selectionner l'heure de la réservation</option>
+                            <option value="1">12h00</option>
+                            <option value="2">12h30</option>
+                            <option value="3">13h00</option>
+                            <option value="4">13h30</option>
+                            <option value="5">14h00</option>
+                            <option value="6">14h30</option>
+                            <option value="7">15h00</option>
+                            <option value="8">18h00</option>
+                            <option value="9">18h30</option>
+                            <option value="10">19h00</option>
+                            <option value="11">19h30</option>
+                            <option value="12">20h00</option>
+                            <option value="13">20h30</option>
+                            <option value="14">21h00</option>
+                            <option value="15">21h30</option>
+                        </select>
+                    <label for="nombrePersonneReservation">Pour combien de personnes souhaitez-vous reserver ?</label>
+                        <input 
+                            type="number"  
+                            name="nombrePersonneReservation" 
+                            id="nombrePersonneReservation"
+                            value="2"
+                            min="1"
+                            max="20"
+                        >
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center p-3">
+                <img src="../media/image/jpg/Reservation/mapsAltera.jpeg" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6"></div>
+            <div class="col-6"></div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <img src="../media/image/jpg/Reservation/Rectangle 14.jpg" id="grandeImageReservation">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6"></div>
+            <div class="col-6"></div>
+        </div>
+        <div class="row p-0" id="sectionOr">
+            <div class="col-12 text-center">
+                <img 
+                class="p-2" 
+                src="../media/image/jpg/Reservation/Rectangle 19.jpg" 
+                alt="" 
+                id="petiteImageReservation">
+                <img 
+                class="p-2" 
+                src="../media/image/jpg/Reservation/Rectangle 20.jpg" 
+                alt="" 
+                id="petiteImageReservation">
+                <img 
+                class="p-2" 
+                src="../media/image/jpg/Reservation/Rectangle 21.jpg" 
+                alt="" 
+                id="petiteImageReservation">
+                <img 
+                class="p-2" 
+                src="../media/image/jpg/Reservation/Rectangle 22.jpg" 
+                alt="" 
+                id="petiteImageReservation">
+            </div>
+        </div>
+    </section>
+    <footer>
         <section class="container p-0 m-0" >
             <div class="row  p-3 m-0" id="sectionVertFonce">
                 <div class="col-4 col-md-3 p-0 m-0">

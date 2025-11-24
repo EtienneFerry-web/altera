@@ -69,10 +69,10 @@ table {
     background-image: url("../media/image/jpg/Hero/Hero.jpg");
     background-size: cover;
     background-position: center;
-    width: 100%;
+    width: 100vw;
     margin: 0;
     padding: 0;
-    display: block;
+  
 }
 
 /*Font helper*/
@@ -80,7 +80,7 @@ table {
   font-family: Amoria;
 }
 
-#hekveticaFont{
+#heveticaFont{
   font-family: Persohelvetica;
 }
 /*Navbar Mobile*/
@@ -106,6 +106,7 @@ table {
   flex: 1 1 auto;
   order:1;
   align-items: center;
+
 }
 
 /* Le <nav> interne: aligner les liens horizontalement */
@@ -113,6 +114,12 @@ table {
   display: flex;
   gap: 24px;
   align-items: center;
+}
+
+nav a{
+  text-decoration: none;
+  font-weight: bolder;
+  color:var(--blanc);
 }
 
 /* Bouton Reserver */
@@ -128,6 +135,7 @@ table {
 
 #reservationButton{
 	display:inline-block;
+  
 	order:3;
 }
 /* Burger trigger (visible mobile) */
@@ -464,6 +472,10 @@ table {
   padding-bottom:2px;
 }
 
+#bandeauImage{
+  background-color: var(--orange);
+}
+
 #platesBackG{
   background-color: var(--vertClair);
 }
@@ -476,9 +488,6 @@ table {
   font-family: Amoria;
 }
 
-#bandeauImage{
-  background-color: var(--orange);
-}
 
 #menuPlates img{
   width:100%;
@@ -488,6 +497,8 @@ table {
   width:100px;
   height:100%;
 }
+
+/*Background color helper*/
 
 #backgroundColor{
   background-color: var(--vertClair);
@@ -507,6 +518,8 @@ table {
   background-color: var(--vertFonce);
 }
 
+/*Page avis*/
+
 #imageAvis{
   width: 65px;
   height:65px;
@@ -517,6 +530,8 @@ table {
 .container{
   width: 100%;
 }
+
+/*Page aboutUs*/
 
 #imageAboutUsUne{
   width: 220px;
@@ -539,9 +554,7 @@ table {
   height: 140px; 
 }
 
-#r{
-  font-size: x-small;
-}
+/*Page Lieux*/
 
 #imageLieuxUne img{
   width: 100%;
@@ -555,11 +568,18 @@ table {
   width:100%;
 }
 
-#containerNegPadding{
-  padding-top: -250px;
-}
 
 footer ul li a {
   color:var(--blanc);
   text-decoration: none;
+}
+
+/*Page reservation*/
+
+#grandeImageReservation{
+  width:100%;
+}
+
+#petiteImageReservation{
+  width:80px;
 }
