@@ -577,9 +577,20 @@ footer ul li a {
 /*Page reservation*/
 
 #grandeImageReservation{
-  width:100%;
+  width:350px;
+  height:350px;
+
 }
 
 #petiteImageReservation{
-  width:80px;
+
+}
+
+#textColorNoir{
+  color:black;
+}
+
+#buttonColorGreen{
+  color: var(--blanc);
+  background-color: var(--vertFonce);
 }

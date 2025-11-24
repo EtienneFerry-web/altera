@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <section class="container p-0">
+    <section class="container-fluid p-0">
         <div class="row p-0 m-0 text-center" id="hero">
             <div class="nav-bar-container">             
                 <div class="nav-row">
@@ -34,7 +34,7 @@
                         </span>
                     </a>
                     <div id="reservationButton">
-                        <a href="#" class="text-end px-2" id="reserverHero">Reserver</a>
+                        <a href="../pages\reservation.html" class="text-end px-2" id="reserverHero">Reserver</a>
                     </div>
 <!-- menu mobile slide-in -->
                     <div id="sideNavBar" class="sideNavBar-container" aria-hidden="true">
@@ -56,72 +56,118 @@
             </div> 
         </div>              
     </section>
-    <section class="container" id="sectionVertFonce">
+    <section class="container-fluid" id="sectionVertFonce">
         <div class="row">
             <div class="col-12 text-center p-2 m-0" id="sectionVertClair">
                 <h2 id="amoriaFont">Reservation</h2>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12 text-center">
-                <form action="" class="p-3">
-                    <label class="pb-2"for="dateDeReservation">Quelle jours souhaitez-vous reserver ?</label>
-                        <input 
-                            class="px-2"
-                            type="date"
-                            id="dateDeReservation"
-                            name="dateDeReservation"
-                            value="2025-01-01"
-                            min="2025-01-01"
-                            max="2099-12-31">
-                    <label class="p-2"for="heureDeReservation">A quelle heure souhaitez-vous reserver ?</label>
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>Selectionner l'heure de la réservation</option>
-                            <option value="1">12h00</option>
-                            <option value="2">12h30</option>
-                            <option value="3">13h00</option>
-                            <option value="4">13h30</option>
-                            <option value="5">14h00</option>
-                            <option value="6">14h30</option>
-                            <option value="7">15h00</option>
-                            <option value="8">18h00</option>
-                            <option value="9">18h30</option>
-                            <option value="10">19h00</option>
-                            <option value="11">19h30</option>
-                            <option value="12">20h00</option>
-                            <option value="13">20h30</option>
-                            <option value="14">21h00</option>
-                            <option value="15">21h30</option>
-                        </select>
-                    <label for="nombrePersonneReservation">Pour combien de personnes souhaitez-vous reserver ?</label>
-                        <input 
-                            type="number"  
-                            name="nombrePersonneReservation" 
-                            id="nombrePersonneReservation"
-                            value="2"
-                            min="1"
-                            max="20"
-                        >
-                </form>
+        <div class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-7">
+                    <div class="card shadow-sm" id="sectionVertClair">
+                        <div class="card-body p-4 p-md-5">
+                            <h3 class="mb-4" id="textColorNoir">Réserver chez Altera</h3>          
+                            <form>
+                                <h5 class="mb-3" id="textColorNoir">Votre réservation :</h5>
+                                    <div class="row g-3">
+                                        <div class="col-md-4">
+                                            <div class="form-floating">
+                                                <select class="form-select" id="guests" aria-label="Nombre de personnes">
+                                                    <option value="1">1 personne</option>
+                                                    <option value="2" selected>2 personnes</option>
+                                                    <option value="3">3 personnes</option>
+                                                    <option value="4">4 personnes</option>
+                                                    <option value="5">5 personnes</option>
+                                                    <option value="6">6+ (Groupe)</option>
+                                                </select>
+                                                <label for="guests">Couverts</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-floating">
+                                                <input type="date" class="form-control" id="date" required>
+                                                <label for="date">Date</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-floating">
+                                                <input type="time" class="form-control" id="time" min="12:00" max="23:00" required>
+                                                <label for="time">Heure</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr class="my-4">
+                                    <h5 class="mb-3" id="textColorNoir">Vos coordonnées</h5>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="name" placeholder="Votre nom" required>
+                                                <label for="name">Nom complet</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-floating">
+                                                <input type="tel" class="form-control" id="phone" placeholder="06..." required>
+                                                <label for="phone">Téléphone</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-floating">
+                                                <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                                                <label for="email">Email (pour confirmation)</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-floating">
+                                                <textarea class="form-control" placeholder="Allergies, emplacement..." id="message" style="height: 100px"></textarea>
+                                                <label for="message">Pour toute demande particulière ...(Allergies, etc.)</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-grid gap-2 mt-4">
+                                        <button class="btn btn-lg" type="submit" id="buttonColorGreen">Confirmer la réservation</button>
+                                    </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12 text-center p-3">
-                <img src="../media/image/jpg/Reservation/mapsAltera.jpeg" alt="">
+        <div class="row p-3 text-center">
+            <div class="col-12 col-md-6 " >
+                <img src="../media/image/jpg/Reservation/mapsAltera.jpeg" id="grandeImageReservation">
             </div>
-        </div>
-        <div class="row">
-            <div class="col-6"></div>
-            <div class="col-6"></div>
-        </div>
-        <div class="row">
-            <div class="col-12">
+
+            <div class="col-12 col-md-6" >
                 <img src="../media/image/jpg/Reservation/Rectangle 14.jpg" id="grandeImageReservation">
             </div>
         </div>
-        <div class="row">
-            <div class="col-6"></div>
-            <div class="col-6"></div>
+            <div class="row text-center">
+                <div class="col-12 " id="horaire">
+                    <div class="row pt-2 px-3">
+                        <h2>Horaire :</h2>
+                        <div class="col-6 m-0 ps-3" id="horaireGauche">
+                            <p>Lundi</p>
+                            <p>Mardi</p>
+                            <p>Mercredi</p>
+                            <p>Jeudi</p>
+                            <p>Vendredi</p>
+                            <p>Samedi</p>
+                            <p>Dimanche</p>
+                        </div>
+                        <div class="col-6 m-0" id="horaireDroite">
+                            <p>12:00 - 00:00</p>
+                            <p>12:00 - 00:00</p>
+                            <p>12:00 - 00:00</p>
+                            <p>12:00 - 00:00</p>
+                            <p>12:00 - 00:00</p>
+                            <p>12:00 - 00:00</p>
+                            <p>12:00 - 00:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="row p-0" id="sectionOr">
             <div class="col-12 text-center">
@@ -149,9 +195,9 @@
         </div>
     </section>
     <footer>
-        <section class="container p-0 m-0" >
+        <section class="container-fluid p-0 m-0" >
             <div class="row  p-3 m-0" id="sectionVertFonce">
-                <div class="col-4 col-md-3 p-0 m-0">
+                <div class="col-4 col-md-4 p-0 m-0">
                     <ul class="p-0 m-0" id="listLinkFooter">
                         <li><a href="../pages/carte.html">Carte</a></li>
                         <li><a href="../pages/avis.htm">Avis</a></li>
@@ -159,13 +205,13 @@
                         <li><a href="../pages/aboutUs.htm">About us</a></li>
                     </ul>
                 </div>
-                <div class="col-4 col-md-3 text-center p-0 m-0">
+                <div class="col-4 col-md-4 text-center p-0 m-0">
                     <ul class="p-0 m-0"id="listLinkFooter">
                         <li><a href="../pages/mentionLegal.html">Mentions légales</a></li>
                         <li><a href="../pages/planDuSite.html">Plan du site</a></li>
                     </ul>                
                 </div>
-                <div class="col-4 col-md-3 text-end p-0 m-0">
+                <div class="col-4 col-md-4 text-end p-0 m-0">
                     <ul class="p-0 m-0" id="listLinkFooter">
                         <li><a href="../pages/reservation.html">Reservation</a></li>
                         <li><a href="..pages/lieux.html">Lieux</a></li>
@@ -187,4 +233,4 @@
     <script src="../script/custom.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
-</html>
+</html4
