@@ -69,7 +69,7 @@ table {
     background-image: url("../media/image/jpg/Hero/Hero.jpg");
     background-size: cover;
     background-position: center;
-    width: 100vw;
+    width: 100%;
     margin: 0;
     padding: 0;
   
@@ -622,8 +622,22 @@ footer ul li a {
 }
 
 #imageAboutUsUne{
+  max-width:550px;
+  max-height: 672px;
   width:100%;
-  height: 100%;
+  height:100%;
   object-fit: cover;
 }
 
+
+#imageAboutUsDeux{
+  width:550px;
+  height:400px;
+  object-fit: cover;
+}
+
+#imageAboutUsTrois{
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+}
