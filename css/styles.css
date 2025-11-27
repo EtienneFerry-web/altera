@@ -540,8 +540,8 @@ nav a{
 }
 
 #imageAboutUsDeux{
-  width: 330px;
-  height: 190px;
+  width: 100%;
+  height: 100%;
 }
 
 #imageAboutUsTrois{
@@ -612,3 +612,18 @@ footer ul li a {
   height: 125px;
   object-fit: cover;
 }
+
+#imageBandeauService img{
+  width: 100%;
+}
+
+#imageCuisinier img{
+  width: 100%;
+}
+
+#imageAboutUsUne{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+}
+
