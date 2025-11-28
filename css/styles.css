@@ -510,6 +510,7 @@ nav a{
 
 #sectionOr{
   background-color: var(--or);
+  height:100%;
 }
 #sectionVertClair{
   background-color: var(--vertClair);
@@ -582,9 +583,6 @@ footer ul li a {
 
 }
 
-#petiteImageReservation{
-
-}
 
 #textColorNoir{
   color:black;
@@ -622,22 +620,37 @@ footer ul li a {
 }
 
 #imageAboutUsUne{
-  max-width:550px;
-  max-height: 672px;
   width:100%;
   height:100%;
   object-fit: cover;
+  display: block;
 }
 
 
 #imageAboutUsDeux{
-  width:550px;
-  height:400px;
-  object-fit: cover;
+width:100%;
+height: 100%;
+display: block;
+object-fit: cover;
+min-height: 250px;
 }
 
 #imageAboutUsTrois{
   width: 100%;
   height:100%;
   object-fit: cover;
+  min-height: 250px;
+  max-height: 400px;
+}
+
+.image-about-us-small{
+  width: 100%;
+  height:200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#petiteImageReservation{
+  border-radius: 10px;
 }
