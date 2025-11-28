@@ -559,14 +559,21 @@ nav a{
 
 #imageLieuxUne img{
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 #imageLieuxDeux img{
   width: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 #imageLieuxTrois img{
   width:100%;
+  object-fit: cover;
+  display: block;
 }
 
 
@@ -617,6 +624,9 @@ footer ul li a {
 
 #imageCuisinier img{
   width: 100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
 }
 
 #imageAboutUsUne{
