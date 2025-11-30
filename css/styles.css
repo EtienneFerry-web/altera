@@ -154,6 +154,13 @@ nav a{
   border: 3px solid var(--or);
   border-radius: 20px;
   font-family: PersoHelvetica;
+  transition: transform 0.3s ease;
+}
+
+/*Hover bouton reservation*/
+
+#reservationButton:hover, #reserverHero{
+  transform: scale(1.04);
 }
 
 #reservationButton{
@@ -248,10 +255,6 @@ nav a{
     display: block;
 }
 
-
-
-
-
 #imageAltera{
 	background-image: url(../media/image/jpg/Index/saladeRotie.jpg);
 	width:100%;
@@ -268,6 +271,11 @@ nav a{
   padding-left :10px;
   padding-top:2px;
   padding-bottom:2px;
+  transition: transform 0.3s ease;
+}
+
+#reservationButtonAltera:hover{
+  transform: scale(1.04); 
 }
 
 #dejeuner h2{
@@ -302,6 +310,11 @@ nav a{
   padding-left :10px;
   padding-top:2px;
   padding-bottom:2px;
+  transition: transform 0.3s ease;
+}
+
+#reservationButtonDejeuner:hover{
+  transform: scale(1.04);
 }
 
 
@@ -339,7 +352,13 @@ nav a{
   padding-left :10px;
   padding-top:2px;
   padding-bottom:2px;
+  transition: transform 0.3s ease;
 }
+
+#reservationButtonAmbiance:hover{
+  transform: scale(1.04);
+}
+
 
 #image-ambiance img{
   width:100%;
@@ -358,13 +377,6 @@ nav a{
 }
 
 
-/*
-#horaireGauche{
-  display: inline-block;
-  padding-left: 20px;
-}
-*/
-
 #horaire h2{
   font-family:Amoria;
 }
@@ -379,21 +391,24 @@ nav a{
 
 }
 
-#listLink#r li {
+#listLink li {
   list-style: none;
   text-decoration: none;
   color: var(--blanc);
   
 }
-#listLink#r li a{
+#listLink li a{
   list-style: none;
   text-decoration: none;
   color: var(--blanc);
+
 }
 
-#listLink#r ul:first-child{
+#listLink ul:first-child{
   font-weight: bolder;
 }
+
+
 
 #menu{
   background-color: var(--vertFonce);
@@ -433,6 +448,7 @@ nav a{
   background-color: var(--or);
 }
 
+
 #buttonPremierePartieImage a {
   text-decoration: none;
   color:var(--blanc);
@@ -442,6 +458,7 @@ nav a{
   padding-left :10px;
   padding-top:2px;
   padding-bottom:2px;
+  transition: transform 0.3s ease;
 }
 
 #buttonDeuxiemePartieImage a{
@@ -453,6 +470,7 @@ nav a{
   padding-left :10px;
   padding-top:2px;
   padding-bottom:2px;
+  transition: transform 0.3s ease;
 }
 
 #buttonTroisiemePartieImage a{
@@ -464,6 +482,7 @@ nav a{
   padding-left :10px;
   padding-top:2px;
   padding-bottom:2px;
+  transition: transform 0.3s ease;
 }
 
 #buttonQuatriemePartieImage a{
@@ -475,7 +494,18 @@ nav a{
   padding-left :10px;
   padding-top:2px;
   padding-bottom:2px;
+  transition: transform 0.3s ease;
 }
+
+
+
+#buttonQuatriemePartieImage:hover, 
+#buttonTroisiemePartieImage:hover, 
+#buttonDeuxiemePartieImage:hover, 
+#buttonPremierePartieImage:hover{
+  transform: scale(1.04); 
+}
+
 
 #bandeauImage{
   background-color: var(--orange);
@@ -606,7 +636,11 @@ footer ul li a {
 #grandeImageReservation{
   width:350px;
   height:350px;
+}
 
+#carouselReservation{
+  width: 350px;
+  height:350px;
 }
 
 
@@ -641,6 +675,12 @@ footer ul li a {
   width: 100%;
   height:100%;
   max-height: 600px;
+}
+
+#carouselInner{
+  object-fit: cover;
+  width: 350px;
+  height:350px;
 }
 
 #imageCuisinier img{
